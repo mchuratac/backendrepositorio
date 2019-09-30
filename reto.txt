@@ -1,0 +1,19 @@
+cuantas colecciones
+como se guarda
+
+
+alumnos
+profesor
+notas
+promediarlas
+nota maxima
+nota minima
+
+1° Nivel
+Crea una base de datos en mongodb donde tendras docentes y alumnos 
+con su nombre, dni y edad, dichos datos deberan mostrarse en un json
+
+En el caso de los alumnos podrán ingresar hasta 4 notas, las mismas que seran promedios y mostradas en el mismo json
+
+2° Nivel
+Realizar el crud del primer nivel mediante Python usando pymongo
