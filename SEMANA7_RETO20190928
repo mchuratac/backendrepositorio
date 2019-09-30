@@ -1,0 +1,18 @@
+import pymongo
+
+class Conexion():
+
+    def __init__(self, host="localhost", puerto="27017",base_datos="colegio"):
+        self.host = host
+        self.puerto = puerto
+        self.base_datos = base_datos
+        self.cliente=pymongo.MongoClient(f"mongodb://{self.host}:{self.puerto}/")
+        self.respuesta = self.cliente[self.base_datos]
+        print("Estas conectado")
+
+    def conectar(self):
+        return self.respuesta
+
+    def cerrar (self):
+        self.cliente.close()
+        print ('Conexion cerrada')
